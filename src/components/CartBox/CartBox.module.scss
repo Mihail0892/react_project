@@ -1,0 +1,26 @@
+.all_box {
+  position: absolute;
+  top: 116px;
+  left: 398px;
+}
+
+.pageName {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #25282b;
+}
+
+.grid {
+  margin-top: 30px;
+  max-width: 982px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.firstLine {
+  margin-top: 50px;
+}

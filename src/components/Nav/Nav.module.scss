@@ -1,0 +1,56 @@
+.siteBar {
+  width: 338px;
+  height: 100vh;
+  position: fixed;
+  // overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  // scrollbar-width: 0px;
+  // background-color: aquamarine;
+}
+
+.logo {
+  position: absolute;
+  left: 93px;
+  top: 36px;
+}
+
+.line {
+  position: absolute;
+  left: 11px;
+  top: 221px;
+}
+
+.menu {
+  // background-color: chartreuse;
+  width: 288px;
+  height: 433px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  left: 25px;
+  top: 242px;
+
+  li {
+    list-style: none;
+    padding-left: 35px;
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    a {
+      text-decoration: none;
+      color: #25282b;
+    }
+    img {
+      margin-right: 20px;
+    }
+  }
+}
+
+.fon {
+  position: absolute;
+  top: 668px;
+}
