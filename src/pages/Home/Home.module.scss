@@ -1,12 +1,13 @@
 .slider {
-  position: absolute;
+  position: relative;
   left: 398px;
   top: 116px;
 }
 
 .popularDishes {
+  max-width: 982px;
   position: absolute;
-  left: 429px;
+  left: 398px;
   top: 397px;
   font-family: "e-Ukraine Head";
   font-style: normal;
@@ -16,3 +17,14 @@
   text-align: center;
   color: #25282b;
 }
+
+.little, .big{
+  width: 982px;
+}
+
+.little{
+ margin-top: 106px;
+align-items: center;
+}
+
+

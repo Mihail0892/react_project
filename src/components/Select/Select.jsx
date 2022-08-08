@@ -17,9 +17,9 @@ const Select =()=>{
             id: 'uncontrolled-native',
           }}
         >
-          <option value={10}>За замовчуванням</option>
+          <option value={30}>За замовчуванням</option>
           <option value={20}>Спочатку дешеві</option>
-          <option value={30}>Спочатку дорогі</option>
+          <option value={10}>Спочатку дорогі</option>
         </NativeSelect>
       </FormControl>
     </Box>

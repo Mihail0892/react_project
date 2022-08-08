@@ -40,9 +40,14 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+   
     a {
       text-decoration: none;
       color: #25282b;
+      &:hover{
+        color: #FF8051;
+      }
+      
     }
     img {
       margin-right: 20px;
@@ -53,4 +58,13 @@
 .fon {
   position: absolute;
   top: 668px;
+}
+
+.font{
+  position:fixed;
+  z-index: -3;
+  top: 500px;
+  width: 338px;
+  height: 310px;
+  background-image: url("../../assets/fon.png");
 }

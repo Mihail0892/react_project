@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Dish.module.scss";
 
 import heart from "../../assets/heart.svg";
-import product_1 from "../../assets/product_1.png";
 import cart from "../../assets/cart.svg";
 
 const Dish = ({description,img,dish,price}) => {

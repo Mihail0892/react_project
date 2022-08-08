@@ -1,16 +1,24 @@
 import React from "react";
+import SliderBig from "components/SliderBig/SliderBig";
+import SliderLittle from "components/SliderLittle/SliderLittle";
+import Footer from "components/Footer/Footer";
 
 import styles from "./Home.module.scss";
 
-import banner_1 from "../../assets/banner_1.jpg";
 
 const Home = () => {
   return (
     <>
       <div className={styles.slider}>
-        <img src={banner_1} alt="banner-1"></img>
+        <div className={styles.big}>
+        <SliderBig/>
+        </div>
         <p className={styles.popularDishes}>Популярні страви</p>
+        <div className={styles.little}>
+        <SliderLittle/>
+        </div>
       </div>
+      
     </>
   );
 };

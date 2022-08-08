@@ -36,9 +36,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     input{
+      width: 200px;
+      height: 25px;
       position: absolute;
-      top:-50px;
-      right: 20px;
+      top:-55px;
+      left: 270px;
+      border-radius: 8px;
+      border-color: #A2A3A6;
+
     }
   }
   

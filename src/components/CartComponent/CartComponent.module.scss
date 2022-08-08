@@ -10,12 +10,20 @@
   position: absolute;
   top: 21px;
   right: 21px;
+  &:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+  }
 }
 
 .dishProduct {
   position: absolute;
   top: 37px;
   right: 46px;
+  &:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 }
 
 .dishName {

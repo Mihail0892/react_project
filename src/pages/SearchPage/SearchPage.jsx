@@ -8,7 +8,7 @@ const SearchPage = () => {
   return (
     <div className={stylesSearchPage.all_box}>
     <div className={stylesSearchPage.flex}>
-      <p className={stylesSearchPage.left_text}>Результат пошуку</p>
+      <p className={stylesSearchPage.left_text}>Пошук товару</p>
     </div>
     <div className={stylesSearchPage.grid}>
         <Search/>

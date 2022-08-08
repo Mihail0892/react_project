@@ -1,0 +1,107 @@
+.footer {
+  width: 1102px;
+  height: 386px;
+  background-color: #f5f5f8;
+  // position:absolute;
+  // left: 340px;
+  // // bottom: 0;
+}
+
+.firstFlex {
+  display: flex;
+  justify-content: space-around;
+  margin: 54px 0 24px 0;
+
+  p {
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #25282b;
+  }
+  span {
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #25282b;
+    opacity: 0.4;
+  }
+}
+
+.footerLine {
+  display: flex;
+  justify-content: center;
+}
+
+.secondFlex {
+  display: flex;
+  justify-content: space-around;
+  margin: 29px;
+  img:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+}
+
+.bigFooterButton,
+.littleFooterButton {
+  width: 400px;
+  height: 62px;
+  border: 1px solid #25282b;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:#F5F5F8;
+  p {
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #25282b;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+    transition: 0.2s;
+    background-color: #ff8051;
+  }
+}
+
+.littleFooterButton {
+  width: 231px;
+}
+
+.thirdFlex {
+  display: flex;
+  justify-content: space-around;
+  p {
+    font-family: "e-Ukraine";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #25282b;
+    opacity: 0.4;
+  }
+  img:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: 0.2s;
+  }
+}
+
+.fourthFlex{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 74px;
+    background-color:  #F0F0F3;
+    
+}

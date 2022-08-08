@@ -66,6 +66,7 @@ const Nav = ({getFilteredData}) => {
           </li>
         </ul>
         {/* <img className={styles.fon} src={fon} alt="fon"></img> */}
+        <div className={styles.font}></div>
       </aside>
     </>
   );

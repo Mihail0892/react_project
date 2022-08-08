@@ -25,7 +25,7 @@ const Search = () => {
     <>
       <input
         type="text"
-        placeholder="search"
+        placeholder="Пошук по назві"
         value={input}
         onChange={onSearchHandler}
       />

@@ -24,3 +24,92 @@
 .firstLine {
   margin-top: 50px;
 }
+
+.cartFlex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.cartFlexText {
+  width: 350px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartFlexRightText {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  p {
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #a2a3a6;
+  }
+}
+
+.cartFlexLeftText {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  p {
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #25282b;
+  }
+}
+
+.cartFlexRightContent {
+  width: 205px;
+  height: 77px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  p {
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #25282b;
+  }
+  input {
+    width: 205px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #a2a3a6;
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #25282b;
+  }
+}
+
+.cartButton {
+  width: 374px;
+  height: 62px;
+  margin: 58px 0 73px 0;
+  background: #ff8051;
+  border-radius: 8px;
+  border: none;
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+  }
+}

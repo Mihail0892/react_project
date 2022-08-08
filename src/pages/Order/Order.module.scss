@@ -1,0 +1,113 @@
+.orderBox {
+  position: absolute;
+  top: 116px;
+  left: 398px;
+}
+
+.orderTitle {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #25282b;
+}
+
+form {
+  margin-top: 25px;
+}
+
+.telephone,
+.name {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #25282b;
+  input {
+    width: 205px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #a2a3a6;
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #25282b;
+  }
+}
+
+.contacts {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  margin-top: 30px;
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #25282b;
+  input {
+    width: 500px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #a2a3a6;
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #25282b;
+  }
+}
+
+.comment {
+  margin-top: 30px;
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #25282b;
+  textarea {
+    width: 500px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #a2a3a6;
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #25282b;
+  }
+}
+
+.orderButton {
+  width: 374px;
+  height: 62px;
+  margin: 58px 0 73px 0;
+  background: #ff8051;
+  border-radius: 8px;
+  border: none;
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+  }
+}

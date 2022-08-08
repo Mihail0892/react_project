@@ -48,7 +48,7 @@ import fanta from "assets/forArray/fanta.png";
 import sprite from "assets/forArray/sprite.png";
 import beer from "assets/forArray/beer.png";
 import water from "assets/forArray/water.png";
-import cofe from "assets/forArray/water.png";
+import cofe from "assets/forArray/cofe.png";
 
 import hleb from "assets/forArray/hleb.png";
 import ketchup from "assets/forArray/ketchup.png";
@@ -261,7 +261,7 @@ const Data = [
   {
     id: 23,
     category:"М'ясні страви",
-    dish: "Стейк із курячого філе на грилі",
+    dish: "Куряче філе на грилі",
     description: 300,
     price: 130,
     img:staik ,
@@ -389,7 +389,7 @@ const Data = [
   {
     id: 39,
     category:"Напої",
-    dish: "Coca-Cola",
+    dish: "Кока-Кола",
     description: 500,
     price: 40,
     img:cola ,
@@ -397,7 +397,7 @@ const Data = [
   {
     id: 40,
     category:"Напої",
-    dish: "Fanta",
+    dish: "Фанта",
     description: 500,
     price: 40,
     img:fanta ,
@@ -405,7 +405,7 @@ const Data = [
   {
     id: 41,
     category:"Напої",
-    dish: "Sprite",
+    dish: "Спрайт",
     description: 500,
     price: 40,
     img:sprite ,
@@ -421,7 +421,7 @@ const Data = [
   {
     id: 43,
     category:"Напої",
-    dish: "Bonaqua без газу",
+    dish: "БонАква без газу",
     description: 500,
     price: 30,
     img:water ,
