@@ -6,7 +6,7 @@ import Footer from "components/Footer/Footer";
 import styles from "./Home.module.scss";
 
 
-const Home = () => {
+const Home = ({setCart}) => {
   return (
     <>
       <div className={styles.slider}>
@@ -15,7 +15,10 @@ const Home = () => {
         </div>
         <p className={styles.popularDishes}>Популярні страви</p>
         <div className={styles.little}>
-        <SliderLittle/>
+        <SliderLittle setCart={setCart}/>
+        </div>
+        <div className={styles.homeFooter}>
+        <Footer/>
         </div>
       </div>
       

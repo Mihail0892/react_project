@@ -1,7 +1,9 @@
 .all_box {
-  position: absolute;
+  position: relative;
   top: 116px;
   left: 398px;
+  padding-bottom: 420px;
+  padding-right: 10px;
 }
 
 .flex {
@@ -35,6 +37,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+@media screen and (max-width:1000px) {
+  grid-template-columns: 1fr 1fr ;
+}
 }
 
 .select {

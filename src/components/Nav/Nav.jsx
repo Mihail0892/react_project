@@ -13,13 +13,10 @@ import salati from "../../assets/salati.svg";
 import desert from "../../assets/desert.svg";
 import drink from "../../assets/drink.svg";
 import other from "../../assets/other.svg";
-import data from "Data/data";
 
-const Nav = ({getFilteredData}) => {
-  const getCategoryName=(e)=>{
-  const filterData = data.filter((item) => item.category === e.target.textContent);
-    getFilteredData(filterData);
-  };
+
+const Nav = () => {
+  
   
   return (
     <>
@@ -30,37 +27,37 @@ const Nav = ({getFilteredData}) => {
         <img className={styles.line} src={line_horisontal} alt="line"></img>
         <ul className={styles.menu}>
           <li>
-            <Link onClick={getCategoryName} to="/SideDishes">
+            <Link  to="/firstDishes">
               <img src={persha_strava} alt="img"></img>Перші страви
             </Link>
           </li>
           <li>
-            <Link onClick={getCategoryName} to="/SideDishes">
+            <Link  to="/secondDishes">
               <img src={garniri} alt="img"></img>Гарніри
             </Link>
           </li>
           <li>
-            <Link onClick={getCategoryName}  to="/SideDishes">
+            <Link  to="/meatDishes">
               <img src={miasni_stravi} alt="img"></img>М'ясні страви
             </Link>
           </li>
           <li>
-            <Link onClick={getCategoryName} to="/SideDishes">
+            <Link  to="/salatDishes">
               <img src={salati} alt="img"></img>Салати
             </Link>
           </li>
           <li>
-            <Link onClick={getCategoryName} to="/SideDishes">
+            <Link  to="/desertDishes">
               <img src={desert} alt="img"></img>Десерти
             </Link>
           </li>
           <li>
-            <Link onClick={getCategoryName} to="/SideDishes">
+            <Link  to="/drinkDishes">
               <img src={drink} alt="img"></img>Напої
             </Link>
           </li>
           <li>
-            <Link onClick={getCategoryName} to="/SideDishes">
+            <Link  to="/otherDishes">
               <img src={other} alt="img"></img>Інше
             </Link>
           </li>

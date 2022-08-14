@@ -3,7 +3,7 @@ import stylesSearchPage from "./SearchPage.module.scss";
 import Search from "components/Search/Search";
 
 
-const SearchPage = () => {
+const SearchPage = ({setCart}) => {
 
   return (
     <div className={stylesSearchPage.all_box}>
@@ -11,7 +11,7 @@ const SearchPage = () => {
       <p className={stylesSearchPage.left_text}>Пошук товару</p>
     </div>
     <div className={stylesSearchPage.grid}>
-        <Search/>
+        <Search setCart={setCart}/>
     </div>
   </div>
   );

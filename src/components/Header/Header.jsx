@@ -7,7 +7,7 @@ import search from "../../assets/search.svg";
 import shoppingCart from "../../assets/shopping cart.svg";
 import user from "../../assets/user.svg";
 
-const Header = () => {
+const Header = ({cartItemsCounter}) => {
   return (
     <>
       <header className={styles.header}>
@@ -39,7 +39,7 @@ const Header = () => {
           <Link to="/CartBox">
           <button className={styles.header__rightFlex__cartButton}>
             <img src={shoppingCart} alt="cart"></img>
-            <span>(0)</span>
+            <span>({cartItemsCounter})</span>
           </button>
           </Link>
         </div>

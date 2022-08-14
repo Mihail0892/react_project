@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import styles from './Search.module.scss';
+import styles from "./Search.module.scss";
 import data from "../../Data/data";
 import Dish from "../Dish/Dish";
 
-const Search = () => {
+const Search = ({ setCart }) => {
   const [dish, setDish] = useState(data);
   const [input, setInput] = useState("");
   const [searchData, setSearchData] = useState([]);
@@ -18,8 +18,8 @@ const Search = () => {
     );
     setSearchData(filterDish);
   };
-  
-   useEffect(filteredData,[input]);
+
+  useEffect(filteredData, [input]);
 
   return (
     <>
@@ -32,6 +32,8 @@ const Search = () => {
       {(searchData.length > 0 ? searchData : dish).map((item) => {
         return (
           <Dish
+            item={item}
+            setCart={setCart}
             key={item.id}
             description={item.description}
             img={item.img}

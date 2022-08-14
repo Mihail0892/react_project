@@ -43,7 +43,7 @@ const SliderBig = () => {
             <br /> смачненьких супів
             <br /> та овочів!
           </h2>
-          <Link to="/Soups"><button className="sliderButton">Обрати супчик!</button></Link>
+          <Link to="/firstDishes"><button className="sliderButton">Обрати супчик!</button></Link>
         </div>
         <div className="wrapper">
           <img src={banner_3} alt="banner" />
@@ -51,7 +51,7 @@ const SliderBig = () => {
           <p className="text_1">
           Замовляй 2 порції борщику, та<br /> отримуй по щам в третій раз.<br /> Ха-ха-ха!
           </p>
-          <Link to="/SideDishes"><button className="sliderButton">КушацЬ!</button></Link>
+          <Link to="/firstDishes"><button className="sliderButton">КушацЬ!</button></Link>
         </div>
       </Slider>
     </div>

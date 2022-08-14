@@ -1,29 +1,34 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import FormControl from '@mui/material/FormControl';
-import NativeSelect from '@mui/material/NativeSelect';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import InputLabel from "@mui/material/InputLabel";
+import FormControl from "@mui/material/FormControl";
+import NativeSelect from "@mui/material/NativeSelect";
 
-const Select =()=>{
+const Select = ({ setPrice,price}) => {
+  console.log('egjknerjbnerj',price)
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel variant="standard" htmlFor="uncontrolled-native">
-        </InputLabel>
+        <InputLabel
+          variant="standard"
+          htmlFor="uncontrolled-native"
+        ></InputLabel>
         <NativeSelect
-          defaultValue={30}
+          onChange={(e) => setPrice(e.target.value)}
+          // defaultValue={30}
+          defaultValue={price}
           inputProps={{
-            name: 'age',
-            id: 'uncontrolled-native',
+            name: "age",
+            id: "uncontrolled-native",
           }}
         >
-          <option value={30}>За замовчуванням</option>
-          <option value={20}>Спочатку дешеві</option>
-          <option value={10}>Спочатку дорогі</option>
+          <option  value={''}>За замовчуванням</option>
+          <option value={"min"}>Спочатку дешеві</option>
+          <option value={"max"}>Спочатку дорогі</option>
         </NativeSelect>
       </FormControl>
     </Box>
   );
-}
+};
 
 export default Select;
