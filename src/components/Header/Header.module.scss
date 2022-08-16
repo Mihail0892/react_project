@@ -1,3 +1,10 @@
+%text-font {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
 .header {
   background-color: rgb(251, 252, 252);
   position: fixed;
@@ -10,15 +17,11 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 .header__leftFlex {
-  font-family: "e-Ukraine Head";
-  font-style: normal;
+  @extend %text-font;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
   color: #25282b;
   span {
     opacity: 0.4;
@@ -30,22 +33,16 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  font-family: "e-Ukraine Head";
-  font-style: normal;
+  @extend %text-font;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
   color: #25282b;
 }
 
 .header__centerFlex li {
   display: inline-block;
   padding: 15px;
-  font-family: "e-Ukraine Head";
-  font-style: normal;
+  @extend %text-font;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
   a {
     text-decoration: none;
     color: #25282b;
@@ -57,11 +54,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: "e-Ukraine Head";
-  font-style: normal;
+  @extend %text-font;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
 }
 
 .header__rightFlex__button {
@@ -69,11 +63,10 @@
   height: 62px;
   border-radius: 8px;
   border: none;
-  // background-color: #f5f5f8;
   &:hover {
     cursor: pointer;
     transform: scale(1.05);
-}
+  }
 }
 
 .header__rightFlex__cartButton {
@@ -88,14 +81,8 @@
     transform: scale(1.05);
   }
   span {
-    // position: absolute;
-    // top: 21px;
-    // right: 21px;
     color: #ffffff;
-    font-family: "e-Ukraine Head";
-    font-style: normal;
+    @extend %text-font;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
   }
 }

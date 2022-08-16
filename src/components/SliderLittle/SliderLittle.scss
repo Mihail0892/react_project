@@ -1,51 +1,27 @@
 .slick-prev:before {
-    content: url('../../assets/prev.svg');
-    color: red;
-    bottom: 20px;
-  }
-  
-  .slick-next:before {
-    content: url('../../assets/next.svg');
-    color: red;
-    bottom: 20px;
-  }
-  
-  .slick-dots li button {
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    font-size: 0px;
-    border: 0;
-  }
-  
-  .slick-dots li button::before {
-    display: none;
-  }
-  
-  .slick-dots .slick-active button {
-    background-color: blue;
-  }
-  
-  .slick-dots {
-    bottom: 10px;
-  }
+  content: url("../../assets/prev.svg");
+}
 
-  .slick-prev, .slick-next {
-    position: absolute;
-    top: 40%;
-  }
+.slick-next:before {
+  content: url("../../assets/next.svg");
+}
 
-  .slick-prev{
-    left:-28px;
-    z-index: 6;
-  }
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 40%;
+}
 
-  .slick-next{
-    left:930px;
-    z-index: 6;
-  }
+.slick-prev {
+  left: -28px;
+  z-index: 6;
+}
 
-  .slick-slide img {
-  display:inline;
+.slick-next {
+  left: 930px;
+  z-index: 6;
+}
+
+.slick-slide img {
+  display: inline;
 }

@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from "react";
-import CartComponent from "../CartComponent/CartComponent";
+import React from "react";
+import CartComponent from "../../components/CartComponent/CartComponent";
 import styles from "./CartBox.module.scss";
 import { Link } from "react-router-dom";
 
 import horizontal_line_big from "../../assets/horizontal_line_big.svg";
 
 const CartBox = ({ cart, setCart }) => {
-  // console.log(cart,'cartBox');
   const summ = cart?.reduce((acc, dish) => {
-    console.log(dish.price, acc, "dishAcc");
     return dish.price + acc;
   }, 0);
-  console.log(summ, "summ");
   return (
     <>
       <div className={styles.all_box}>
@@ -19,7 +16,7 @@ const CartBox = ({ cart, setCart }) => {
         <div className={styles.grid}>
           {cart.map((item) => (
             <CartComponent
-            cart={cart}
+              cart={cart}
               id={item.id}
               setCart={setCart}
               key={item.id}

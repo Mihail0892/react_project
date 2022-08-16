@@ -1,21 +1,17 @@
 import React from "react";
 import styles from "./Dish.module.scss";
-import data from "Data/data";
 
 import heart from "../../assets/heart.svg";
 import cart from "../../assets/cart.svg";
 
-const Dish = ({ description, img, dish, price, item, setCart }) => {
+const Dish = ({ description, img, dish, price, item, setCart}) => {
   const pushCart = () => {
     setCart((prevState) => {
       const isItemInCart = prevState.some((dish) => dish.id === item.id);
-      
-      return !isItemInCart ? [...prevState, item]:prevState;
-        
-      
+
+      return !isItemInCart ? [...prevState, item] : prevState;
     });
 
-    console.log(item.id, item, "itemID");
   };
   return (
     <>

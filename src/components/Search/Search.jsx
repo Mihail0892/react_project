@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import styles from "./Search.module.scss";
 import data from "../../Data/data";
 import Dish from "../Dish/Dish";
 
 const Search = ({ setCart }) => {
-  const [dish, setDish] = useState(data);
   const [input, setInput] = useState("");
   const [searchData, setSearchData] = useState([]);
 
@@ -13,7 +11,7 @@ const Search = ({ setCart }) => {
   };
 
   const filteredData = () => {
-    const filterDish = dish.filter((item) =>
+    const filterDish = data.filter((item) =>
       item.dish.toLowerCase().includes(input.toLowerCase())
     );
     setSearchData(filterDish);
@@ -29,7 +27,7 @@ const Search = ({ setCart }) => {
         value={input}
         onChange={onSearchHandler}
       />
-      {(searchData.length > 0 ? searchData : dish).map((item) => {
+      {(searchData.length > 0 ? searchData : data).map((item) => {
         return (
           <Dish
             item={item}

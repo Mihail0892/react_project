@@ -5,23 +5,21 @@ import Footer from "components/Footer/Footer";
 
 import styles from "./Home.module.scss";
 
-
-const Home = ({setCart}) => {
+const Home = ({ setCart }) => {
   return (
     <>
       <div className={styles.slider}>
         <div className={styles.big}>
-        <SliderBig/>
+          <SliderBig />
         </div>
         <p className={styles.popularDishes}>Популярні страви</p>
         <div className={styles.little}>
-        <SliderLittle setCart={setCart}/>
+          <SliderLittle setCart={setCart} />
         </div>
         <div className={styles.homeFooter}>
-        <Footer/>
+          <Footer />
         </div>
       </div>
-      
     </>
   );
 };

@@ -4,8 +4,7 @@ import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import NativeSelect from "@mui/material/NativeSelect";
 
-const Select = ({ setPrice,price}) => {
-  console.log('egjknerjbnerj',price)
+const Select = ({ setPrice, price }) => {
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
@@ -15,14 +14,13 @@ const Select = ({ setPrice,price}) => {
         ></InputLabel>
         <NativeSelect
           onChange={(e) => setPrice(e.target.value)}
-          // defaultValue={30}
           defaultValue={price}
           inputProps={{
             name: "age",
             id: "uncontrolled-native",
           }}
         >
-          <option  value={''}>За замовчуванням</option>
+          <option value={""}>За замовчуванням</option>
           <option value={"min"}>Спочатку дешеві</option>
           <option value={"max"}>Спочатку дорогі</option>
         </NativeSelect>

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./CartComponent.module.scss";
-// import salat from "../../assets/salat.png";
 import delete_icon from "../../assets/delete_icon.svg";
 
 const CartComponent = ({

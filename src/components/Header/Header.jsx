@@ -7,7 +7,7 @@ import search from "../../assets/search.svg";
 import shoppingCart from "../../assets/shopping cart.svg";
 import user from "../../assets/user.svg";
 
-const Header = ({cartItemsCounter}) => {
+const Header = ({ cartItemsCounter }) => {
   return (
     <>
       <header className={styles.header}>
@@ -30,17 +30,19 @@ const Header = ({cartItemsCounter}) => {
           </ul>
         </div>
         <div className={styles.header__rightFlex}>
-        <Link to="/SearchPage"><button className={styles.header__rightFlex__button}>
-            <img src={search} alt="search"></img>
-          </button></Link>
+          <Link to="/SearchPage">
+            <button className={styles.header__rightFlex__button}>
+              <img src={search} alt="search"></img>
+            </button>
+          </Link>
           <button className={styles.header__rightFlex__button}>
             <img src={user} alt="user"></img>
           </button>
           <Link to="/CartBox">
-          <button className={styles.header__rightFlex__cartButton}>
-            <img src={shoppingCart} alt="cart"></img>
-            <span>({cartItemsCounter})</span>
-          </button>
+            <button className={styles.header__rightFlex__cartButton}>
+              <img src={shoppingCart} alt="cart"></img>
+              <span>({cartItemsCounter})</span>
+            </button>
           </Link>
         </div>
       </header>

@@ -1,3 +1,9 @@
+%text-font {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 500;
+}
+
 .box {
   position: relative;
   width: 307px;
@@ -16,7 +22,7 @@
   position: absolute;
   top: 37px;
   right: 46px;
-  &:hover{
+  &:hover {
     transform: scale(1.1);
     transition: 0.5s;
   }
@@ -27,9 +33,7 @@
   position: absolute;
   top: 262px;
   right: 20px;
-  font-family: "e-Ukraine Head";
-  font-style: normal;
-  font-weight: 500;
+  @extend %text-font;
   font-size: 18px;
   line-height: 22px;
   text-align: start;
@@ -58,9 +62,7 @@
   background-color: #ff8051;
   border-radius: 8px;
   border: none;
-  font-family: "e-Ukraine Head";
-  font-style: normal;
-  font-weight: 500;
+  @extend %text-font;
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;

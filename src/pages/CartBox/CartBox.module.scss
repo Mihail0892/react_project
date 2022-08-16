@@ -1,3 +1,23 @@
+%text-font-1 {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+%text-font-2 {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .all_box {
   position: absolute;
   top: 116px;
@@ -39,29 +59,17 @@
 }
 
 .cartFlexRightText {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  @extend %flex;
   p {
-    font-family: "e-Ukraine Head";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    @extend %text-font-1;
     color: #a2a3a6;
   }
 }
 
 .cartFlexLeftText {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  @extend %flex;
   p {
-    font-family: "e-Ukraine Head";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    @extend %text-font-1;
     color: #25282b;
   }
 }
@@ -69,15 +77,9 @@
 .cartFlexRightContent {
   width: 205px;
   height: 77px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  @extend %flex;
   p {
-    font-family: "e-Ukraine Head";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    @extend %text-font-1;
     color: #25282b;
   }
   input {
@@ -85,11 +87,8 @@
     height: 40px;
     border-radius: 8px;
     border: 1px solid #a2a3a6;
-    font-family: "e-Ukraine Head";
-    font-style: normal;
+    @extend %text-font-2;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
     color: #25282b;
   }
 }
@@ -101,11 +100,8 @@
   background: #ff8051;
   border-radius: 8px;
   border: none;
-  font-family: "e-Ukraine Head";
-  font-style: normal;
+  @extend %text-font-2;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
   color: #ffffff;
 
   &:hover {

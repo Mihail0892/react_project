@@ -1,3 +1,24 @@
+%text-font-1 {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+%text-font-2 {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+%text-font-3 {
+  font-family: "e-Ukraine Head";
+  font-style: normal;
+  font-weight: 500;
+}
+
 .orderBox {
   position: absolute;
   top: 116px;
@@ -5,9 +26,7 @@
 }
 
 .orderTitle {
-  font-family: "e-Ukraine Head";
-  font-style: normal;
-  font-weight: 500;
+  @extend %text-font-3;
   font-size: 24px;
   line-height: 29px;
   color: #25282b;
@@ -19,11 +38,7 @@ form {
 
 .telephone,
 .name {
-  font-family: "e-Ukraine Head";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  @extend %text-font-1;
   color: #25282b;
   input {
     width: 205px;
@@ -31,11 +46,8 @@ form {
     margin-top: 10px;
     border-radius: 8px;
     border: 1px solid #a2a3a6;
-    font-family: "e-Ukraine Head";
-    font-style: normal;
+    @extend %text-font-2;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
     color: #25282b;
   }
 }
@@ -48,11 +60,7 @@ form {
 
 .address {
   margin-top: 30px;
-  font-family: "e-Ukraine Head";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  @extend %text-font-1;
   color: #25282b;
   input {
     width: 500px;
@@ -60,22 +68,15 @@ form {
     margin-top: 10px;
     border-radius: 8px;
     border: 1px solid #a2a3a6;
-    font-family: "e-Ukraine Head";
-    font-style: normal;
+    @extend %text-font-2;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
     color: #25282b;
   }
 }
 
 .comment {
   margin-top: 30px;
-  font-family: "e-Ukraine Head";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  @extend %text-font-1;
   color: #25282b;
   textarea {
     width: 500px;
@@ -83,11 +84,8 @@ form {
     margin-top: 10px;
     border-radius: 8px;
     border: 1px solid #a2a3a6;
-    font-family: "e-Ukraine Head";
-    font-style: normal;
+    @extend %text-font-2;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
     color: #25282b;
   }
 }
@@ -99,15 +97,49 @@ form {
   background: #ff8051;
   border-radius: 8px;
   border: none;
-  font-family: "e-Ukraine Head";
-  font-style: normal;
+  @extend %text-font-2;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
   color: #ffffff;
 
   &:hover {
     cursor: pointer;
     transform: scale(0.98);
+  }
+}
+
+.modal {
+  width: 750px;
+  height: 600px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  top: 45px;
+  background-color: #ff8051;
+  border-radius: 8px;
+  @extend %text-font-3;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  p {
+    width: 600px;
+  }
+  button {
+    width: 374px;
+    height: 62px;
+    margin: 58px 0 73px 0;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #25282b;
+    @extend %text-font-3;
+    font-size: 22px;
+    line-height: 17px;
+    color: #25282b;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.98);
+    }
   }
 }

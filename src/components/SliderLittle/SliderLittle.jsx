@@ -9,7 +9,6 @@ import data from "Data/data";
 import "./SliderLittle.scss";
 import Dish from "components/Dish/Dish";
 
-
 const settings = {
   dots: false,
   infinite: true,
@@ -24,10 +23,11 @@ const SliderLittle = ({ setCart }) => {
       <Slider {...settings}>
         {data.map((item, index) =>
           index % 10 === 0 ? (
-            <div>
+            <div key={item.id}>
               <Dish
                 setCart={setCart}
                 item={item}
+                key={item.id}
                 description={item.description}
                 price={item.price}
                 img={item.img}

@@ -33,28 +33,35 @@ const Footer = () => {
           <img src={call} alt="call" />
           <p>+38(097) 185 88 98 / +38(096) 848 40 53 </p>
         </button>
-        <button  className={styles.littleFooterButton}>
+        <button className={styles.littleFooterButton}>
           <img src={mail} alt="mail" />
           <p>mama@gmail.com</p>
         </button>
-        <img src={instagram} alt="instagram" />
-        <img src={facebook} alt="facebookm" />
-        <img src={telegram} alt="telegram" />
+        <a href="https://www.instagram.com/" target="blank">
+          <img src={instagram} alt="instagram" />
+        </a>
+        <a href="https://uk-ua.facebook.com/" target="blank">
+          <img src={facebook} alt="facebookm" />
+        </a>
+        <a href="https://web.telegram.org/z/" target="blank">
+          <img src={telegram} alt="telegram" />
+        </a>
       </div>
       <div className={styles.thirdFlex}>
         <p>
           2018-2022 © MamaCooking™ Всі права захищені. Доставляємо безкоштовно в
-          будь-який час<br/> з 10:00 до 17:00. MamaCooking™ залишає за собою право
-          змінювати встановлені ціни.
+          будь-який час
+          <br /> з 10:00 до 17:00. MamaCooking™ залишає за собою право змінювати
+          встановлені ціни.
         </p>
-        <img src={callback} alt='callback'/>
+        <img src={callback} alt="callback" />
       </div>
       <div className={styles.fourthFlex}>
-        <img src={pay1} alt='pay'/>
-        <img src={pay2} alt='pay'/>
-        <img src={pay3} alt='pay'/>
-        <img src={pay4} alt='pay'/>
-        <img src={pay5} alt='pay'/>
+        <img src={pay1} alt="pay" />
+        <img src={pay2} alt="pay" />
+        <img src={pay3} alt="pay" />
+        <img src={pay4} alt="pay" />
+        <img src={pay5} alt="pay" />
       </div>
     </div>
   );

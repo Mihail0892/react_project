@@ -5,7 +5,6 @@ import styles from "./Nav.module.scss";
 
 import logo from "../../assets/logo.svg";
 import line_horisontal from "../../assets/line_horisontal.svg";
-import fon from "../../assets/fon.png";
 import persha_strava from "../../assets/persha_strava.svg";
 import garniri from "../../assets/garniri.svg";
 import miasni_stravi from "../../assets/miasni_stravi.svg";
@@ -14,10 +13,7 @@ import desert from "../../assets/desert.svg";
 import drink from "../../assets/drink.svg";
 import other from "../../assets/other.svg";
 
-
 const Nav = () => {
-  
-  
   return (
     <>
       <aside className={styles.siteBar}>
@@ -27,42 +23,41 @@ const Nav = () => {
         <img className={styles.line} src={line_horisontal} alt="line"></img>
         <ul className={styles.menu}>
           <li>
-            <Link  to="/firstDishes">
+            <Link to="/firstDishes">
               <img src={persha_strava} alt="img"></img>Перші страви
             </Link>
           </li>
           <li>
-            <Link  to="/secondDishes">
+            <Link to="/secondDishes">
               <img src={garniri} alt="img"></img>Гарніри
             </Link>
           </li>
           <li>
-            <Link  to="/meatDishes">
+            <Link to="/meatDishes">
               <img src={miasni_stravi} alt="img"></img>М'ясні страви
             </Link>
           </li>
           <li>
-            <Link  to="/salatDishes">
+            <Link to="/salatDishes">
               <img src={salati} alt="img"></img>Салати
             </Link>
           </li>
           <li>
-            <Link  to="/desertDishes">
+            <Link to="/desertDishes">
               <img src={desert} alt="img"></img>Десерти
             </Link>
           </li>
           <li>
-            <Link  to="/drinkDishes">
+            <Link to="/drinkDishes">
               <img src={drink} alt="img"></img>Напої
             </Link>
           </li>
           <li>
-            <Link  to="/otherDishes">
+            <Link to="/otherDishes">
               <img src={other} alt="img"></img>Інше
             </Link>
           </li>
         </ul>
-        {/* <img className={styles.fon} src={fon} alt="fon"></img> */}
         <div className={styles.font}></div>
       </aside>
     </>
