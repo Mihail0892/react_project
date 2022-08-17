@@ -60,7 +60,7 @@ function App() {
           element={<SideDishes setCart={setCart} filterData={otherDishes} />}
         />
         <Route path="/SearchPage" element={<SearchPage setCart={setCart} />} />
-        <Route path="/Order" element={<Order />} />
+        <Route path="/Order" element={<Order setCart={setCart}/>} />
       </Routes>
     </>
   );

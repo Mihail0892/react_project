@@ -107,5 +107,10 @@
   &:hover {
     cursor: pointer;
     transform: scale(0.98);
+    background: #25282B;
+  }
+
+  &:disabled {
+    background: #a2a3a6;
   }
 }

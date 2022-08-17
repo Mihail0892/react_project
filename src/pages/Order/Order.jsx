@@ -3,7 +3,7 @@ import styles from "./Order.module.scss";
 import horizontal_line_big from "../../assets/horizontal_line_big.svg";
 import { Link } from "react-router-dom";
 
-const Order = () => {
+const Order = ({setCart}) => {
   const [modal, setModal] = useState(false);
   const [value_1, setValue_1] = useState("");
   const [value_2, setValue_2] = useState("");
@@ -19,6 +19,7 @@ const Order = () => {
   };
   const closeModal = () => {
     setModal(false);
+    setCart([]);
   };
 
   return (
@@ -36,7 +37,7 @@ const Order = () => {
               value={value_1}
               onChange={(e) => setValue_1(e.target.value)}
               type="text"
-              placeholder=" +38 (0"
+              placeholder="Введіть ваш телефон"
             />
           </div>
           <div className={styles.name}>

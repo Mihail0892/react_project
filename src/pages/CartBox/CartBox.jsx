@@ -51,7 +51,7 @@ const CartBox = ({ cart, setCart }) => {
         </div>
         <Link to="/Order">
           {" "}
-          <button className={styles.cartButton}>Перейти до замовлення</button>
+          <button disabled={cart.length===0} className={styles.cartButton}>Перейти до замовлення</button>
         </Link>
       </div>
     </>

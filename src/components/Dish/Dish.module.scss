@@ -69,5 +69,9 @@
   &:hover {
     cursor: pointer;
     transform: scale(0.98);
+    background-color: #25282B;
+  }
+  img{
+    transform: translateY(4px);
   }
 }
