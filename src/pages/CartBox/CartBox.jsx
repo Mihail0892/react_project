@@ -13,13 +13,13 @@ const CartBox = ({ cart, setCart }) => {
     return acc + dish.price * numb;
   }, 0);
 
-  const [price, setPrice] = useState(summ);
+  // const [price, setPrice] = useState(summ);
   const [input, setInput] = useState("");
 
-  const newPrice = () => {
-    setInput(input.target.value);
-    if (input.length > 1) setPrice(summ - summ * 0, 1);
-  };
+  // const newPrice = () => {
+  //   setInput(input.target.value);
+  //   if (input.length > 1) setPrice(summ - summ * 0, 1);
+  // };
   return (
     <>
       <div className={styles.all_box}>
