@@ -29,7 +29,7 @@ const Order = ({setCart}) => {
       <div className={styles.firstLine}>
         <img src={horizontal_line_big} alt="horisontal_line"></img>
       </div>
-      <form onSubmit={openModal}>
+      <form className={styles.form} onSubmit={openModal}>
         <div className={styles.contacts}>
           <div className={styles.telephone}>
             <p>Телефон:</p>

@@ -1,5 +1,16 @@
 .wrapper {
   position: relative;
+  @media screen and (max-width:600px) {
+    width: 100vw;
+  }
+}
+
+.slide{
+  @media screen and (max-width:600px) {
+    width: 100vw;
+    // height: 230px;
+    height: 57vw;
+  }
 }
 
 .title_1 {
@@ -12,6 +23,12 @@
   font-size: 32px;
   line-height: 38px;
   color: #25282b;
+  @media screen and (max-width:600px) {
+  top: 30px;
+  left: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  }
 }
 
 .text_1 {
@@ -24,6 +41,12 @@
   font-size: 14px;
   line-height: 22px;
   color: #a2a3a6;
+  @media screen and (max-width:600px) {
+    top: 83px;
+  left: 10px;
+  font-size: 10px;
+  line-height: 14px;
+    }
 }
 
 .sliderButton {
@@ -45,6 +68,14 @@
     background:#25282B;
     transform: scale(0.97);
     cursor: pointer;
+  }
+  @media screen and (max-width:600px) {
+    width: 118px;
+    height: 40px;
+    top: 155px;
+    left: 10px;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 

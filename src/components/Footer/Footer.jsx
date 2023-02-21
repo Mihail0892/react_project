@@ -37,6 +37,7 @@ const Footer = () => {
           <img src={mail} alt="mail" />
           <p>mama@gmail.com</p>
         </button>
+        <div className={styles.media}>
         <a href="https://www.instagram.com/" target="blank">
           <img src={instagram} alt="instagram" />
         </a>
@@ -46,6 +47,7 @@ const Footer = () => {
         <a href="https://web.telegram.org/z/" target="blank">
           <img src={telegram} alt="telegram" />
         </a>
+        </div>
       </div>
       <div className={styles.thirdFlex}>
         <p>

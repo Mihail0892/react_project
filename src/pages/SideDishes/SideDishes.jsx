@@ -25,6 +25,7 @@ const SideDishes = ({ filterData, setCart }) => {
   }, [filterData]);
 
   return (
+    <>
     <div ref={fieldRef} className={styles.all_box}>
       <div className={styles.flex}>
         <p className={styles.left_text}>{filterData[0].category}</p>
@@ -45,8 +46,11 @@ const SideDishes = ({ filterData, setCart }) => {
           />
         ))}
       </div>
+      <div className={styles.footer}>
       <Footer />
+      </div>
     </div>
+    </>
   );
 };
 

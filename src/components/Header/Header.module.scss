@@ -17,6 +17,13 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  @media screen and (max-width:600px) {
+    width: 100%;
+    left: 0;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+  }
 }
 
 .header__leftFlex {
@@ -26,6 +33,11 @@
   span {
     opacity: 0.4;
   }
+  @media screen and (max-width:600px) {
+    display: none;
+    width: 0px;
+  }
+
 }
 
 .header__centerFlex {
@@ -36,6 +48,10 @@
   @extend %text-font;
   font-weight: 400;
   color: #25282b;
+  @media screen and (max-width:600px) {
+    display: none;
+    width: 0px;
+  }
 }
 
 .header__centerFlex li {
@@ -47,15 +63,20 @@
     text-decoration: none;
     color: #25282b;
   }
+  
 }
 
 .header__rightFlex {
   max-width: 270px;
-  width: 100%;
+  // width: 100%;
+  width: 300px;
   display: flex;
   justify-content: space-between;
   @extend %text-font;
   font-weight: 400;
+  @media screen and (max-width:600px) {
+    width: 230px;
+  }
 }
 
 .header__rightFlex__button {
@@ -66,6 +87,10 @@
   &:hover {
     cursor: pointer;
     transform: scale(1.05);
+  }
+  @media screen and (max-width:600px) {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -90,4 +115,114 @@
   img{
     transform: translateY(4px);
   }
+
+  @media screen and (max-width:600px) {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+.burgerIcon{
+  width: 50px;
+  height: 50px;
+  display: none;
+  @media screen and (max-width:1024px) {
+    display: block;
+  }
+}
+
+// styles for burger menu
+
+.siteBar {
+  display: none;
+  width: 338px;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @media screen and (max-width:1024px) {
+    width: 100vw;
+    background-color: beige;
+    display: block;
+  }
+  z-index: 1400;
+}
+
+.logo {
+  position: absolute;
+  left: 93px;
+  top: 36px;
+}
+
+.line {
+  position: absolute;
+  left: 11px;
+  top: 221px;
+}
+
+.menu {
+  width: 288px;
+  height: 433px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  left: 25px;
+  top: 242px;
+
+  li {
+    list-style: none;
+    padding-left: 35px;
+    font-family: "e-Ukraine Head";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    a {
+      text-decoration: none;
+      color: #25282b;
+      &:hover {
+        color: #ff8051;
+      }
+    }
+    img {
+      margin-right: 20px;
+      transform: translateY(3px);
+    }
+  }
+}
+
+.font {
+  position: fixed;
+  z-index: -3;
+  // top: 500px;
+  bottom: 0px;
+  width: 338px;
+  height: 310px;
+  background-image: url("../../assets/fon.png");
+}
+
+.burgerClose{
+  width: 40px;
+  height: 40px;
+  display: none;
+  transform: translate(15px,35px);
+  @media screen and (max-width:1024px) {
+    display: block;
+  }
+}
+
+.burgerOpen{
+  width: 50px;
+  height: 50px;
+  display: none;
+  @media screen and (max-width:1024px) {
+    display: block;
+  }
+}
+
+.contacts{
+  position: absolute;
+  bottom: -100px;
 }

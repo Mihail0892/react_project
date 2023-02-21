@@ -3,6 +3,9 @@
   left: 398px;
   top: 116px;
   padding-bottom: 420px;
+  @media screen and (max-width:600px) {
+    left: 0;
+  }
 }
 
 .popularDishes {
@@ -10,6 +13,7 @@
   position: absolute;
   left: 398px;
   top: 397px;
+
   font-family: "e-Ukraine Head";
   font-style: normal;
   font-weight: 500;
@@ -17,6 +21,15 @@
   line-height: 29px;
   text-align: center;
   color: #25282b;
+  @media screen and (max-width:600px) {
+    // left: 20vw;
+    position: static;
+    left:0;
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 15vw;
+    // top: 22%;
+  }
 }
 
 .little,
@@ -27,4 +40,22 @@
 .little {
   margin-top: 106px;
   align-items: center;
+  @media screen and (max-width:600px) {
+    // transform: translateX(12vw);
+    margin: 0 auto;
+    // margin-top: 115px;
+    margin-top: 45px;
+  }
+}
+
+.big {
+  @media screen and (max-width:600px) {
+    width: 100vw;
+  }
+}
+
+.little {
+  @media screen and (max-width:600px) {
+    width: 307px;
+  }
 }

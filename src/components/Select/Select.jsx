@@ -6,7 +6,7 @@ import NativeSelect from "@mui/material/NativeSelect";
 
 const Select = ({ setPrice, price }) => {
   return (
-    <Box sx={{ minWidth: 120 }}>
+    <Box sx={{ minWidth: 190 }}>
       <FormControl fullWidth>
         <InputLabel
           variant="standard"
@@ -20,7 +20,7 @@ const Select = ({ setPrice, price }) => {
             id: "uncontrolled-native",
           }}
         >
-          <option value={""}>За замовчуванням</option>
+          {/* <option value={""}>За замовчуванням</option> */}
           <option value={"min"}>Спочатку дешеві</option>
           <option value={"max"}>Спочатку дорогі</option>
         </NativeSelect>

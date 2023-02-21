@@ -18,8 +18,10 @@ function App() {
   const desertDishes = data.filter((item) => item.category === "Десерти");
   const drinkDishes = data.filter((item) => item.category === "Напої");
   const otherDishes = data.filter((item) => item.category === "Інше");
-
+ 
+  
   const [cart, setCart] = useState([]);
+  
 
   return (
     <>
@@ -28,7 +30,7 @@ function App() {
       <Routes>
         <Route
           path="/CartBox"
-          element={<CartBox setCart={setCart} cart={cart} />}
+          element={<CartBox  setCart={setCart} cart={cart} />}
         />
         <Route path="/" element={<Home setCart={setCart} />} />
         <Route

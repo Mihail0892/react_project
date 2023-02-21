@@ -2,12 +2,25 @@
   position: absolute;
   top: 116px;
   left: 398px;
+  @media screen and (max-width:600px) {
+    left: 12vw;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
 }
 
 .flex {
   max-width: 982px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width:600px) {
+    margin-bottom: 55px;
+    margin-top: 10px;
+    
+  }
 }
 
 .left_text {
@@ -45,6 +58,13 @@
     outline: 0;
     border:2px solid black;
     border-radius: 8px;
+  }
+  @media screen and (max-width:600px) {
+    grid-template-columns: 1fr ;
+    input {
+      top: -65px;
+      left: 0px;
+    }
   }
 }
 

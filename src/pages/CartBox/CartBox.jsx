@@ -4,11 +4,22 @@ import styles from "./CartBox.module.scss";
 import { Link } from "react-router-dom";
 
 import horizontal_line_big from "../../assets/horizontal_line_big.svg";
+import { useState } from "react";
 
 const CartBox = ({ cart, setCart }) => {
+  const [numb, setNumb] = useState(1);
   const summ = cart?.reduce((acc, dish) => {
-    return dish.price + acc;
+    console.log(dish.price * numb);
+    return acc + dish.price * numb;
   }, 0);
+
+  const [price, setPrice] = useState(summ);
+  const [input, setInput] = useState("");
+
+  const newPrice = () => {
+    setInput(input.target.value);
+    if (input.length > 1) setPrice(summ - summ * 0, 1);
+  };
   return (
     <>
       <div className={styles.all_box}>
@@ -24,6 +35,8 @@ const CartBox = ({ cart, setCart }) => {
               img={item.img}
               dish={item.dish}
               price={item.price}
+              count={item.count}
+              setNumb={setNumb}
             />
           ))}
         </div>
@@ -43,7 +56,12 @@ const CartBox = ({ cart, setCart }) => {
           </div>
           <div className={styles.cartFlexRightContent}>
             <p>У мене є промокод:</p>
-            <input type="text" placeholder=" Введіть промокод" />
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              type="text"
+              placeholder=" Введіть промокод"
+            />
           </div>
         </div>
         <div className={styles.firstLine}>
@@ -51,7 +69,9 @@ const CartBox = ({ cart, setCart }) => {
         </div>
         <Link to="/Order">
           {" "}
-          <button disabled={cart.length===0} className={styles.cartButton}>Перейти до замовлення</button>
+          <button disabled={cart.length === 0} className={styles.cartButton}>
+            Перейти до замовлення
+          </button>
         </Link>
       </div>
     </>

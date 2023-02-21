@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from 'react-responsive';
+
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,22 +24,26 @@ const settings = {
 };
 
 const SliderBig = () => {
+  const isMobileScreen = useMediaQuery({ maxWidth: 600 });
   return (
     <div>
       <Slider {...settings}>
         <div className="wrapper">
-          <img src={banner_1} alt="banner" />
+          <img className="slide" src={banner_1} alt="banner" />
           <h2 className="title_1">
-            Ти вперше <br /> на цьому сайті?!{" "}
+            Ти вперше на<br /> цьому сайті?!{" "}
           </h2>
-          <p className="text_1">
-            Тоді лови знижку 10%, на перше
+          {isMobileScreen?<p className="text_1">
+            Тоді лови знижку<br /> 10% на перше
+            замовлення.<br /> “Матуся” подбає. щоб ви <br /> не були голодні!
+          </p>:<p className="text_1">
+            Тоді лови знижку 10% на перше
             <br /> замовлення. “Матуся” подбає. щоб ви <br /> не були голодні!
-          </p>
+          </p>}
           <button className="sliderButton">КушацЬ!</button>
         </div>
         <div className="wrapper">
-          <img src={banner_2} alt="banner" />
+          <img className="slide" src={banner_2} alt="banner" />
           <h2 className="title_1">
             Літо, сезон
             <br /> смачненьких супів
@@ -48,7 +54,7 @@ const SliderBig = () => {
           </Link>
         </div>
         <div className="wrapper">
-          <img src={banner_3} alt="banner" />
+          <img className="slide" src={banner_3} alt="banner" />
           <h2 className="title_1 title_3">
             1+1=3 <br />
             Пропозиція тижня!

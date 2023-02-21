@@ -63,6 +63,8 @@ const Data = [
     dish: "Уха по-норвезьки",
     description: 400,
     price: 135,
+    priceTotal:135,
+    count:1,
     img: uha,
   },
   {
@@ -71,6 +73,8 @@ const Data = [
     dish: "Куриний суп",
     description: 450,
     price: 70,
+    priceTotal:70,
+    count:1,
     img: sup_kurinniy,
   },
   {
@@ -79,6 +83,8 @@ const Data = [
     dish: "Червоний борщ",
     description: 450,
     price: 100,
+    priceTotal:100,
+    count:1,
     img: borsh,
   },
   {
@@ -87,6 +93,8 @@ const Data = [
     dish: "Тосканьский рибний суп",
     description: 350,
     price: 135,
+    priceTotal:135,
+    count:1,
     img: sup_rybniy,
   },
   {
@@ -95,6 +103,8 @@ const Data = [
     dish: "Суп “Харчо”",
     description: 550,
     price: 110,
+    priceTotal:110,
+    count:1,
     img: sup_harcho,
   },
   {
@@ -103,6 +113,8 @@ const Data = [
     dish: "Овочевий крем суп",
     description: 400,
     price: 100,
+    priceTotal:100,
+    count:1,
     img: sup_ovocheviy,
   },
   {
@@ -111,6 +123,8 @@ const Data = [
     dish: "Томатний крем суп",
     description: 500,
     price: 80,
+    priceTotal:80,
+    count:1,
     img: sup_tomatniy,
   },
   {
@@ -119,6 +133,8 @@ const Data = [
     dish: "Сочевичний крем суп",
     description: 350,
     price: 90,
+    priceTotal:90,
+    count:1,
     img: sup_chechevica,
   },
   {
@@ -127,6 +143,8 @@ const Data = [
     dish: "Грибний крем суп",
     description: 350,
     price: 110,
+    priceTotal:110,
+    count:1,
     img: sup_gribniy,
   },
   {
@@ -135,6 +153,8 @@ const Data = [
     dish: "Солянка",
     description: 500,
     price: 120,
+    priceTotal:120,
+    count:1,
     img: solyanka,
   },
   {
@@ -143,6 +163,8 @@ const Data = [
     dish: "Азіатський суп ",
     description: 400,
     price: 150,
+    priceTotal:150,
+    count:1,
     img: sup_azia,
   },
   {
@@ -151,6 +173,8 @@ const Data = [
     dish: "Рис вершковий",
     description: 230,
     price: 100,
+    priceTotal:100,
+    count:1,
     img: ris,
   },
   {
@@ -159,6 +183,8 @@ const Data = [
     dish: "Овочі гриль",
     description: 500,
     price: 120,
+    priceTotal:120,
+    count:1,
     img: ovochi_gril,
   },
   {
@@ -167,6 +193,8 @@ const Data = [
     dish: "Картопляне пюре",
     description: 400,
     price: 50,
+    priceTotal:50,
+    count:1,
     img: pure,
   },
   {
@@ -175,6 +203,8 @@ const Data = [
     dish: "Вареники з картоплею",
     description: 350,
     price: 80,
+    priceTotal:80,
+    count:1,
     img: vareniki,
   },
   {
@@ -183,6 +213,8 @@ const Data = [
     dish: "Картопля фрі з соусом",
     description: "235/30",
     price: 90,
+    priceTotal:90,
+    count:1,
     img: fri,
   },
   {
@@ -191,6 +223,8 @@ const Data = [
     dish: "Мікс овочів з соусом",
     description: "300/50",
     price: 100,
+    priceTotal:100,
+    count:1,
     img: ovochi_mix,
   },
   {
@@ -199,6 +233,8 @@ const Data = [
     dish: "Гречка с тефтелями",
     description: 300 | 100 | 20,
     price: 110,
+    priceTotal:110,
+    count:1,
     img: grecha,
   },
   {
@@ -207,6 +243,8 @@ const Data = [
     dish: "Вівсяна каша на молоці",
     description: 300,
     price: 50,
+    priceTotal:50,
+    count:1,
     img: ovsyanka,
   },
   {
@@ -215,6 +253,8 @@ const Data = [
     dish: "Макарони з сиром",
     description: "300/50",
     price: 70,
+    priceTotal:70,
+    count:1,
     img: makarony,
   },
   {
@@ -222,7 +262,9 @@ const Data = [
     category: "М'ясні страви",
     dish: "1/2 Курча",
     description: 400,
+    count:1,
     price: 160,
+    priceTotal:160,
     img: pol_kurcha,
   },
   {
@@ -231,6 +273,8 @@ const Data = [
     dish: "Крила BBQ",
     description: 350,
     price: 150,
+    priceTotal:150,
+    count:1,
     img: krilya_bbq,
   },
   {
@@ -239,6 +283,8 @@ const Data = [
     dish: "Котлети з індички",
     description: 350,
     price: 120,
+    priceTotal:120,
+    count:1,
     img: kotlety_indeyka,
   },
   {
@@ -247,6 +293,8 @@ const Data = [
     dish: "Куряче філе на грилі",
     description: 300,
     price: 130,
+    priceTotal:130,
+    count:1,
     img: staik,
   },
   {
@@ -255,6 +303,8 @@ const Data = [
     dish: "Філе індички",
     description: "120/80/30/150",
     price: 190,
+    priceTotal:190,
+    count:1,
     img: file_indeyki,
   },
   {
@@ -263,6 +313,8 @@ const Data = [
     dish: "Грецький салат ",
     description: 325,
     price: 130,
+    priceTotal:130,
+    count:1,
     img: grecheskiy_salat,
   },
   {
@@ -271,6 +323,8 @@ const Data = [
     dish: "Фруктовий салат",
     description: 400,
     price: 140,
+    priceTotal:140,
+    count:1,
     img: frute_salat,
   },
   {
@@ -279,6 +333,8 @@ const Data = [
     dish: "Салат з бринзою",
     description: 350,
     price: 120,
+    priceTotal:120,
+    count:1,
     img: brinza_salat,
   },
   {
@@ -287,6 +343,8 @@ const Data = [
     dish: "Cалат з креветками",
     description: 380,
     price: 190,
+    priceTotal:190,
+    count:1,
     img: grecheskiy_krivetki_salat,
   },
   {
@@ -295,6 +353,8 @@ const Data = [
     dish: "Капрезе",
     description: 340,
     price: 160,
+    priceTotal:160,
+    count:1,
     img: kapreze_salat,
   },
   {
@@ -303,6 +363,8 @@ const Data = [
     dish: "Цезар з куркою",
     description: 400,
     price: 180,
+    priceTotal:180,
+    count:1,
     img: cesar_salat,
   },
   {
@@ -311,6 +373,8 @@ const Data = [
     dish: "Фiсташковий брауні",
     description: 250,
     price: 100,
+    priceTotal:100,
+    count:1,
     img: brauni,
   },
   {
@@ -319,6 +383,8 @@ const Data = [
     dish: "Червоний оксамит",
     description: 180,
     price: 80,
+    priceTotal:80,
+    count:1,
     img: krasniy_oksamit,
   },
   {
@@ -327,6 +393,8 @@ const Data = [
     dish: "Йогуртовий торт",
     description: 260,
     price: 130,
+    priceTotal:130,
+    count:1,
     img: yogurt_tort,
   },
   {
@@ -335,6 +403,8 @@ const Data = [
     dish: "Тарт лимонний",
     description: 170,
     price: 80,
+    priceTotal:80,
+    count:1,
     img: tart,
   },
   {
@@ -343,6 +413,8 @@ const Data = [
     dish: "Сирники",
     description: 250,
     price: 140,
+    priceTotal:140,
+    count:1,
     img: sirniki,
   },
   {
@@ -351,6 +423,8 @@ const Data = [
     dish: "Три шоколада",
     description: 280,
     price: 150,
+    priceTotal:150,
+    count:1,
     img: tri_chokolate,
   },
   {
@@ -359,6 +433,8 @@ const Data = [
     dish: "Яблучний штрудель",
     description: 180,
     price: 100,
+    priceTotal:100,
+    count:1,
     img: shtrudel,
   },
   {
@@ -367,6 +443,8 @@ const Data = [
     dish: "Млинці з шоколадом",
     description: 280,
     price: 130,
+    priceTotal:130,
+    count:1,
     img: bliny,
   },
   {
@@ -375,6 +453,8 @@ const Data = [
     dish: "Кока-Кола",
     description: 500,
     price: 40,
+    priceTotal:40,
+    count:1,
     img: cola,
   },
   {
@@ -383,6 +463,8 @@ const Data = [
     dish: "Фанта",
     description: 500,
     price: 40,
+    priceTotal:40,
+    count:1,
     img: fanta,
   },
   {
@@ -391,6 +473,8 @@ const Data = [
     dish: "Спрайт",
     description: 500,
     price: 40,
+    priceTotal:40,
+    count:1,
     img: sprite,
   },
   {
@@ -399,6 +483,8 @@ const Data = [
     dish: "Пиво в асортименті",
     description: 500,
     price: 70,
+    priceTotal:70,
+    count:1,
     img: beer,
   },
   {
@@ -407,6 +493,8 @@ const Data = [
     dish: "БонАква без газу",
     description: 500,
     price: 30,
+    priceTotal:30,
+    count:1,
     img: water,
   },
   {
@@ -415,6 +503,8 @@ const Data = [
     dish: "Кава в асортименті",
     description: 400,
     price: 60,
+    priceTotal:60,
+    count:1,
     img: cofe,
   },
   {
@@ -423,6 +513,8 @@ const Data = [
     dish: "Хлібний кошик",
     description: 300,
     price: 30,
+    priceTotal:30,
+    count:1,
     img: hleb,
   },
   {
@@ -431,6 +523,8 @@ const Data = [
     dish: "Кетчуп",
     description: 30,
     price: 10,
+    priceTotal:10,
+    count:1,
     img: ketchup,
   },
   {
@@ -439,6 +533,8 @@ const Data = [
     dish: "Соус Тартар",
     description: 30,
     price: 10,
+    priceTotal:10,
+    count:1,
     img: tartar,
   },
   {
@@ -447,6 +543,8 @@ const Data = [
     dish: "Соус BBQ",
     description: 30,
     price: 10,
+    priceTotal:10,
+    count:1,
     img: bbq,
   },
   {
@@ -455,6 +553,8 @@ const Data = [
     dish: "Соус кисло-солодкий",
     description: 30,
     price: 10,
+    priceTotal:10,
+    count:1,
     img: kislo_sladkiy,
   },
   {
@@ -463,6 +563,8 @@ const Data = [
     dish: "Соус сирний",
     description: 30,
     price: 10,
+    priceTotal:10,
+    count:1,
     img: sirniy,
   },
 ];

@@ -22,6 +22,9 @@
   position: absolute;
   top: 116px;
   left: 398px;
+  @media screen and (max-width: 600px) {
+    left: 12vw;
+  }
 }
 
 .pageName {
@@ -39,16 +42,30 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 
 .firstLine {
   margin-top: 50px;
+  img {
+    @media screen and (max-width: 600px) {
+      width: 300px;
+      height: 5px;
+    }
+  }
 }
 
 .cartFlex {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    height: 180px;
+  }
 }
 
 .cartFlexText {
@@ -56,6 +73,9 @@
   height: 60px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    width: 300px;
+  }
 }
 
 .cartFlexRightText {
@@ -107,10 +127,13 @@
   &:hover {
     cursor: pointer;
     transform: scale(0.98);
-    background: #25282B;
+    background: #25282b;
   }
 
   &:disabled {
     background: #a2a3a6;
+  }
+  @media screen and (max-width: 600px) {
+    width: 270px;
   }
 }
