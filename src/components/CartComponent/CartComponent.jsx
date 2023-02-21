@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./CartComponent.module.scss";
 import delete_icon from "../../assets/delete_icon.svg";
 import { useState } from "react";
@@ -20,9 +20,9 @@ const CartComponent = ({
     setCart(cartAfterDelete);
   };
   
-  useEffect(()=>{
-    setNumb(amount)
-  },[amount])
+  // useEffect(()=>{
+  //   setNumb(amount)
+  // },[amount])
 
   const amountPlus = () => {
     setAmount(amount + 1);
