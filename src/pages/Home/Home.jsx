@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import SliderBig from "components/SliderBig/SliderBig";
 import SliderLittle from "components/SliderLittle/SliderLittle";
 import Footer from "components/Footer/Footer";
@@ -6,9 +6,13 @@ import Footer from "components/Footer/Footer";
 import styles from "./Home.module.scss";
 
 const Home = ({ setCart }) => {
+  const fieldRef = useRef(null);
+  useEffect(()=>{
+    fieldRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  },[])
   return (
     <>
-      <div className={styles.slider}>
+      <div ref={fieldRef}  className={styles.slider}>
         <div className={styles.big}>
           <SliderBig />
         </div>

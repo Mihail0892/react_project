@@ -2,6 +2,10 @@
   position: absolute;
   top: 116px;
   left: 398px;
+  @media screen and (max-width:1200px) {
+    left: 360px;
+    
+  }
   @media screen and (max-width:600px) {
     left: 12vw;
     width: 300px; 

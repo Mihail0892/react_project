@@ -16,6 +16,7 @@ import Dish from "components/Dish/Dish";
 
 const SliderLittle = ({ setCart }) => {
   const isMobileScreen = useMediaQuery({ maxWidth: 600 });
+  
 
   const settings = {
     dots: false,

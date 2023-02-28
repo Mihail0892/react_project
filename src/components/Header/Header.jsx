@@ -5,7 +5,7 @@ import styles from "./Header.module.scss";
 
 import search from "../../assets/search.svg";
 import shoppingCart from "../../assets/shopping cart.svg";
-import user from "../../assets/user.svg";
+import home from "../../assets/home.svg";
 import menu from "../../assets/menu.png";
 import close from "../../assets/close.png";
 
@@ -103,9 +103,10 @@ const Header = ({ cartItemsCounter }) => {
               <img src={search} alt="search"></img>
             </button>
           </Link>
-          <button className={styles.header__rightFlex__button}>
-            <img src={user} alt="user"></img>
+          <Link to="/"><button className={styles.header__rightFlex__button}>
+            <img src={home} alt="user"></img>
           </button>
+          </Link>
           <Link to="/CartBox">
             <button className={styles.header__rightFlex__cartButton}>
               <img src={shoppingCart} alt="cart"></img>

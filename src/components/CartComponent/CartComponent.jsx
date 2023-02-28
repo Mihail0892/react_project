@@ -19,7 +19,7 @@ const CartComponent = ({
     const cartAfterDelete = cart.filter((item) => item.id !== id);
     setCart(cartAfterDelete);
   };
-  
+
   // useEffect(()=>{
   //   setNumb(amount)
   // },[amount])
@@ -34,7 +34,6 @@ const CartComponent = ({
     } else if (amount === 1) {
       onDeleteItem();
     }
-    
   };
 
   return (

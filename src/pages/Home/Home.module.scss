@@ -1,8 +1,14 @@
 .slider {
-  position: relative;
+  // position: relative;
+  scroll-margin-top: 115px;
+  position: absolute;
   left: 398px;
   top: 116px;
   padding-bottom: 420px;
+  @media screen and (max-width:1200px) {
+    left:375px;
+    max-width: 800px;
+  }
   @media screen and (max-width:600px) {
     left: 0;
   }
@@ -21,6 +27,10 @@
   line-height: 29px;
   text-align: center;
   color: #25282b;
+  @media screen and (max-width:1200px) {
+    top: 340px;
+    left: 310px;
+  }
   @media screen and (max-width:600px) {
     // left: 20vw;
     position: static;
@@ -40,6 +50,10 @@
 .little {
   margin-top: 106px;
   align-items: center;
+  @media screen and (max-width:1200px) {
+   width: 800px;
+   transform: translateX(5px);
+  }
   @media screen and (max-width:600px) {
     // transform: translateX(12vw);
     margin: 0 auto;
@@ -49,6 +63,9 @@
 }
 
 .big {
+  @media screen and (max-width:1200px) {
+    width: 800px;
+  }
   @media screen and (max-width:600px) {
     width: 100vw;
   }

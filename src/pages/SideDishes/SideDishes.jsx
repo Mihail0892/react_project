@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
+import {useLocation } from "react-router-dom";
 import styles from "./SideDishes.module.scss";
 import Select from "../../components/Select/Select";
 import Dish from "../../components/Dish/Dish";
 import Footer from "components/Footer/Footer";
 
 const SideDishes = ({ filterData, setCart }) => {
+  const location = useLocation();
   const [price, setPrice] = useState("");
   const [sorted, setSorted] = useState([]);
   const fieldRef = useRef(null);
@@ -21,8 +23,12 @@ const SideDishes = ({ filterData, setCart }) => {
 
   useEffect(() => {
     setSorted(filterData);
-    fieldRef.current.scrollIntoView();
+    // fieldRef.current.scrollIntoView();
   }, [filterData]);
+
+  useEffect(()=>{
+    fieldRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  },[location.pathname])
 
   return (
     <>

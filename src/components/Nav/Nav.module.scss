@@ -5,6 +5,9 @@
   position: fixed;
   overflow-y: auto;
   overflow-x: hidden;
+  @media screen and (max-width:1200px) {
+    width: 305px;
+   }
   @media screen and (max-width:1024px) {
    display:none ;
   }
@@ -54,6 +57,9 @@
       transform: translateY(3px);
     }
   }
+  @media screen and (max-width:1200px) {
+    height: 360px;
+   }
 }
 
 .font {
@@ -63,6 +69,10 @@
   width: 338px;
   height: 310px;
   background-image: url("../../assets/fon.png");
+  @media screen and (max-width:1200px) {
+    width: 305px;
+    height: 300px;
+   }
 }
 
 .burgerIcon{
