@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState,useEffect, useRef } from "react";
 import CartComponent from "../../components/CartComponent/CartComponent";
 import styles from "./CartBox.module.scss";
 import { Link } from "react-router-dom";
 
 import horizontal_line_big from "../../assets/horizontal_line_big.svg";
-import { useState } from "react";
+
 
 const CartBox = ({ cart, setCart }) => {
+  const fieldRef = useRef(null);
+  useEffect(()=>{
+    fieldRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  },[])
   const [numb, setNumb] = useState(1);
   const summ = cart?.reduce((acc, dish) => {
     console.log(dish.price * numb);
@@ -22,7 +26,7 @@ const CartBox = ({ cart, setCart }) => {
   // };
   return (
     <>
-      <div className={styles.all_box}>
+      <div ref={fieldRef} className={styles.all_box}>
         <p className={styles.pageName}>Кошик</p>
         <div className={styles.grid}>
           {cart.map((item) => (

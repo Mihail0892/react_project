@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState,useEffect, useRef } from "react";
 import styles from "./Order.module.scss";
 import horizontal_line_big from "../../assets/horizontal_line_big.svg";
 import { Link } from "react-router-dom";
 
 const Order = ({setCart}) => {
+  const fieldRef = useRef(null);
+  useEffect(()=>{
+    fieldRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  },[])
   const [modal, setModal] = useState(false);
   const [value_1, setValue_1] = useState("");
   const [value_2, setValue_2] = useState("");
@@ -23,7 +27,7 @@ const Order = ({setCart}) => {
   };
 
   return (
-    <div className={styles.orderBox}>
+    <div ref={fieldRef} className={styles.orderBox}>
       <h1 className={styles.orderTitle}>Оформлення замовлення</h1>
 
       <div className={styles.firstLine}>
