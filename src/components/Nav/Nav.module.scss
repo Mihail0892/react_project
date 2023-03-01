@@ -58,20 +58,23 @@
     }
   }
   @media screen and (max-width:1280px) {
-    height: 360px;
+    // height: 360px;
+    height: 320px;
    }
 }
 
 .font {
   position: fixed;
   z-index: -3;
-  top: 500px;
+  // top: 500px;
+  bottom: 0;
   width: 338px;
   height: 310px;
   background-image: url("../../assets/fon.png");
   @media screen and (max-width:1280px) {
     width: 305px;
     height: 300px;
+    // bottom: 0;
    }
 }
 
