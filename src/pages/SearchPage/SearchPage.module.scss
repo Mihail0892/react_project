@@ -1,8 +1,9 @@
 .all_box {
+  scroll-margin-top: 115px;
   position: absolute;
   top: 116px;
   left: 398px;
-  @media screen and (max-width:1200px) {
+  @media screen and (max-width:1280px) {
     left: 360px;
     
   }
