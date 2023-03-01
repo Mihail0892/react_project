@@ -15,7 +15,7 @@
 .slick-prev {
   left: -30px;
   z-index: 6;
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1366px) {
     left:-15px;
   }
   @media screen and (max-width:1024px) {
@@ -26,7 +26,7 @@
 .slick-next {
   left: 930px;
   z-index: 6;
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1366px) {
     left:735px;
   }
   @media screen and (max-width:1024px) {

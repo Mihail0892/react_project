@@ -5,7 +5,7 @@
   left: 398px;
   top: 116px;
   padding-bottom: 420px;
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1366px) {
     left:375px;
     max-width: 800px;
   }
@@ -27,7 +27,7 @@
   line-height: 29px;
   text-align: center;
   color: #25282b;
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1366px) {
     top: 340px;
     left: 310px;
   }
@@ -50,7 +50,7 @@
 .little {
   margin-top: 106px;
   align-items: center;
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1366px) {
    width: 800px;
    transform: translateX(5px);
   }
@@ -63,7 +63,7 @@
 }
 
 .big {
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1366px) {
     width: 800px;
   }
   @media screen and (max-width:600px) {

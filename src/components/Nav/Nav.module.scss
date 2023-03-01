@@ -5,7 +5,7 @@
   position: fixed;
   // overflow-y: auto;
   overflow: hidden;
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1366px) {
     width: 305px;
    }
   @media screen and (max-width:1024px) {
@@ -57,7 +57,7 @@
       transform: translateY(3px);
     }
   }
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1366px) {
     // height: 360px;
     height: 320px;
    }
@@ -71,7 +71,7 @@
   width: 338px;
   height: 310px;
   background-image: url("../../assets/fon.png");
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1366px) {
     width: 305px;
     height: 300px;
     // bottom: 0;
