@@ -131,6 +131,7 @@
   input {
     width: 205px;
     height: 40px;
+    padding-left: 10px;
     border-radius: 8px;
     border: 1px solid #a2a3a6;
     @extend %text-font-2;

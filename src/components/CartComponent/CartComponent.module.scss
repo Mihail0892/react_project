@@ -126,26 +126,6 @@
   }
 }
 
-// .dishBuy {
-//   position: absolute;
-//   top: 331px;
-//   left: 20px;
-//   width: 267px;
-//   height: 62px;
-//   background-color: #ff8051;
-//   border-radius: 8px;
-//   border: none;
-//   @extend %text-font;
-//   font-size: 14px;
-//   line-height: 17px;
-//   color: #ffffff;
-//   &:hover {
-//     cursor: pointer;
-//     transform: scale(0.98);
-//   }
-
-// }
-
 .dishPrice {
   position: absolute;
   top: 350px;
@@ -179,6 +159,7 @@
   left: 151px;
   &:hover {
     border: 1px solid #25282b;
+    cursor: pointer;
   }
   @media screen and (max-width: 1366px) {
     top: 285px;
@@ -203,6 +184,7 @@
   left: 241px;
   &:hover {
     background-color: #25282b;
+    cursor: pointer;
   }
   @media screen and (max-width: 1366px) {
     top: 285px;

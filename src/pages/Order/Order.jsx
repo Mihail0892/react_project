@@ -40,8 +40,10 @@ const Order = ({setCart}) => {
             <input
               value={value_1}
               onChange={(e) => setValue_1(e.target.value)}
-              type="text"
+              type="tel"
               placeholder="Введіть ваш телефон"
+              required
+              autoComplete="on"
             />
           </div>
           <div className={styles.name}>
@@ -61,6 +63,7 @@ const Order = ({setCart}) => {
             onChange={(e) => setValue_3(e.target.value)}
             type="text"
             placeholder=" Вулиця, будинок, квартира"
+            required
           />
         </div>
         <div className={styles.comment}>

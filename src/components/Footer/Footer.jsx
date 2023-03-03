@@ -29,14 +29,16 @@ const Footer = () => {
         <img src={horizontal_line_big} alt="line" />
       </div>
       <div className={styles.secondFlex}>
-        <button className={styles.bigFooterButton}>
+        <a href="tel:+380971858898"><button className={styles.bigFooterButton}>
           <img src={call} alt="call" />
           <p>+38(097) 185 88 98 / +38(096) 848 40 53 </p>
         </button>
-        <button className={styles.littleFooterButton}>
+        </a>
+        <a href="mailto:mama@gmail.com"> <button className={styles.littleFooterButton}>
           <img src={mail} alt="mail" />
-          <p>mama@gmail.com</p>
+         <p>mama@gmail.com</p>
         </button>
+        </a> 
         <div className={styles.media}>
         <a href="https://www.instagram.com/" target="blank">
           <img src={instagram} alt="instagram" />

@@ -1,46 +1,41 @@
-import React, { useState,useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import CartComponent from "../../components/CartComponent/CartComponent";
 import styles from "./CartBox.module.scss";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import horizontal_line_big from "../../assets/horizontal_line_big.svg";
 
+const CartBox = () => {
+  const cartItems = useSelector((state) => state.Cart.items);
+  const q = useSelector((state) => state.Cart.items);
+  console.log(cartItems);
 
-const CartBox = ({ cart, setCart }) => {
   const fieldRef = useRef(null);
-  useEffect(()=>{
-    fieldRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
-  },[])
-  const [numb, setNumb] = useState(1);
-  const summ = cart?.reduce((acc, dish) => {
-    console.log(dish.price * numb);
-    return acc + dish.price * numb;
-  }, 0);
+  useEffect(() => {
+    fieldRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
 
-  // const [price, setPrice] = useState(summ);
+  const priceTotal = useSelector((state) => state.Cart.totalPrice);
+
   const [input, setInput] = useState("");
 
-  // const newPrice = () => {
-  //   setInput(input.target.value);
-  //   if (input.length > 1) setPrice(summ - summ * 0, 1);
-  // };
   return (
     <>
       <div ref={fieldRef} className={styles.all_box}>
-        <p className={styles.pageName}>Кошик</p>
+        <p className={styles.pageName}>
+          Кошик {q.length === 0 && <span>порожній</span>}
+        </p>
         <div className={styles.grid}>
-          {cart.map((item) => (
+          {cartItems.map((item) => (
             <CartComponent
-              cart={cart}
               id={item.id}
-              setCart={setCart}
               key={item.id}
               description={item.description}
               img={item.img}
               dish={item.dish}
               price={item.price}
               count={item.count}
-              setNumb={setNumb}
             />
           ))}
         </div>
@@ -55,7 +50,7 @@ const CartBox = ({ cart, setCart }) => {
             </div>
             <div className={styles.cartFlexLeftText}>
               <p>0.00 грн</p>
-              <p>{summ}.00 грн</p>
+              <p>{priceTotal}.00 грн</p>
             </div>
           </div>
           <div className={styles.cartFlexRightContent}>
@@ -73,7 +68,7 @@ const CartBox = ({ cart, setCart }) => {
         </div>
         <Link to="/Order">
           {" "}
-          <button disabled={cart.length === 0} className={styles.cartButton}>
+          <button disabled={q.length === 0} className={styles.cartButton}>
             Перейти до замовлення
           </button>
         </Link>

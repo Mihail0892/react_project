@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header/Header";
@@ -18,51 +18,44 @@ function App() {
   const desertDishes = data.filter((item) => item.category === "Десерти");
   const drinkDishes = data.filter((item) => item.category === "Напої");
   const otherDishes = data.filter((item) => item.category === "Інше");
- 
-  
-  const [cart, setCart] = useState([]);
-  
 
   return (
     <>
       <Nav />
-      <Header cartItemsCounter={cart.length} />
+      <Header />
       <Routes>
-        <Route
-          path="/CartBox"
-          element={<CartBox  setCart={setCart} cart={cart} />}
-        />
-        <Route path="/" element={<Home setCart={setCart} />} />
+        <Route path="/CartBox" element={<CartBox />} />
+        <Route path="/" element={<Home />} />
         <Route
           path="/firstDishes"
-          element={<SideDishes setCart={setCart} filterData={firstDishes} />}
+          element={<SideDishes filterData={firstDishes} />}
         />
         <Route
           path="/secondDishes"
-          element={<SideDishes setCart={setCart} filterData={secondDishes} />}
+          element={<SideDishes filterData={secondDishes} />}
         />
         <Route
           path="/meatDishes"
-          element={<SideDishes setCart={setCart} filterData={meatDishes} />}
+          element={<SideDishes filterData={meatDishes} />}
         />
         <Route
           path="/salatDishes"
-          element={<SideDishes setCart={setCart} filterData={salatDishes} />}
+          element={<SideDishes filterData={salatDishes} />}
         />
         <Route
           path="/desertDishes"
-          element={<SideDishes setCart={setCart} filterData={desertDishes} />}
+          element={<SideDishes filterData={desertDishes} />}
         />
         <Route
           path="/drinkDishes"
-          element={<SideDishes setCart={setCart} filterData={drinkDishes} />}
+          element={<SideDishes filterData={drinkDishes} />}
         />
         <Route
           path="/otherDishes"
-          element={<SideDishes setCart={setCart} filterData={otherDishes} />}
+          element={<SideDishes filterData={otherDishes} />}
         />
-        <Route path="/SearchPage" element={<SearchPage setCart={setCart} />} />
-        <Route path="/Order" element={<Order setCart={setCart}/>} />
+        <Route path="/SearchPage" element={<SearchPage />} />
+        <Route path="/Order" element={<Order />} />
       </Routes>
     </>
   );

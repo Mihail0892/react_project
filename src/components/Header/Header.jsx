@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import styles from "./Header.module.scss";
 
@@ -19,8 +20,8 @@ import desert from "../../assets/desert.svg";
 import drink from "../../assets/drink.svg";
 import other from "../../assets/other.svg";
 
-
-const Header = ({ cartItemsCounter }) => {
+const Header = () => {
+  const q = useSelector((state) => state.Cart.items);
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -78,7 +79,12 @@ const Header = ({ cartItemsCounter }) => {
       )}
       {/* Desctop menu */}
       <header className={styles.header}>
-        <img onClick={()=>setOpen(true)} className={styles.burgerOpen} src={menu} alt="burger icon" />
+        <img
+          onClick={() => setOpen(true)}
+          className={styles.burgerOpen}
+          src={menu}
+          alt="burger icon"
+        />
         <div className={styles.header__leftFlex}>
           <p>
             <span>Наш телефон:</span> +38(097)1858898
@@ -103,14 +109,15 @@ const Header = ({ cartItemsCounter }) => {
               <img src={search} alt="search"></img>
             </button>
           </Link>
-          <Link to="/"><button className={styles.header__rightFlex__button}>
-            <img src={home} alt="user"></img>
-          </button>
+          <Link to="/">
+            <button className={styles.header__rightFlex__button}>
+              <img src={home} alt="user"></img>
+            </button>
           </Link>
           <Link to="/CartBox">
             <button className={styles.header__rightFlex__cartButton}>
               <img src={shoppingCart} alt="cart"></img>
-              <span>({cartItemsCounter})</span>
+              <span>({q.length})</span>
             </button>
           </Link>
         </div>

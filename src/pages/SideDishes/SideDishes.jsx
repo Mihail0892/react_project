@@ -5,7 +5,7 @@ import Select from "../../components/Select/Select";
 import Dish from "../../components/Dish/Dish";
 import Footer from "components/Footer/Footer";
 
-const SideDishes = ({ filterData, setCart }) => {
+const SideDishes = ({ filterData}) => {
   const location = useLocation();
   const [price, setPrice] = useState("");
   const [sorted, setSorted] = useState([]);
@@ -23,7 +23,6 @@ const SideDishes = ({ filterData, setCart }) => {
 
   useEffect(() => {
     setSorted(filterData);
-    // fieldRef.current.scrollIntoView();
   }, [filterData]);
 
   useEffect(()=>{
@@ -42,13 +41,14 @@ const SideDishes = ({ filterData, setCart }) => {
       <div className={styles.grid}>
         {(sorted.length > 0 ? sorted : filterData).map((item) => (
           <Dish
-            setCart={setCart}
             item={item}
+            id={item.id}
             key={item.id}
             description={item.description}
             img={item.img}
             dish={item.dish}
             price={item.price}
+            count={item.count}
           />
         ))}
       </div>
