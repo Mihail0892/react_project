@@ -14,7 +14,7 @@ import Dish from "components/Dish/Dish";
 
 
 
-const SliderLittle = ({ setCart }) => {
+const SliderLittle = () => {
   const isMobileScreen = useMediaQuery({ maxWidth: 600 });
   
 
@@ -34,13 +34,14 @@ const SliderLittle = ({ setCart }) => {
           index % 10 === 0 ? (
             <div key={item.id}>
               <Dish
-                setCart={setCart}
                 item={item}
+                id={item.id}
                 key={item.id}
                 description={item.description}
-                price={item.price}
                 img={item.img}
                 dish={item.dish}
+                price={item.price}
+                count={item.count}
               />
             </div>
           ) : null

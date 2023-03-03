@@ -30,13 +30,14 @@ const Search = ({ setCart }) => {
       {(searchData.length > 0 ? searchData : data).map((item) => {
         return (
           <Dish
-            item={item}
-            setCart={setCart}
-            key={item.id}
-            description={item.description}
-            img={item.img}
-            dish={item.dish}
-            price={item.price}
+          item={item}
+          id={item.id}
+          key={item.id}
+          description={item.description}
+          img={item.img}
+          dish={item.dish}
+          price={item.price}
+          count={item.count}
           />
         );
       })}
