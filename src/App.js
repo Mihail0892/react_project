@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import styles from "./App.module.scss";
 
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
@@ -21,42 +22,44 @@ function App() {
 
   return (
     <>
-      <Nav />
-      <Header />
-      <Routes>
-        <Route path="/CartBox" element={<CartBox />} />
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/firstDishes"
-          element={<SideDishes filterData={firstDishes} />}
-        />
-        <Route
-          path="/secondDishes"
-          element={<SideDishes filterData={secondDishes} />}
-        />
-        <Route
-          path="/meatDishes"
-          element={<SideDishes filterData={meatDishes} />}
-        />
-        <Route
-          path="/salatDishes"
-          element={<SideDishes filterData={salatDishes} />}
-        />
-        <Route
-          path="/desertDishes"
-          element={<SideDishes filterData={desertDishes} />}
-        />
-        <Route
-          path="/drinkDishes"
-          element={<SideDishes filterData={drinkDishes} />}
-        />
-        <Route
-          path="/otherDishes"
-          element={<SideDishes filterData={otherDishes} />}
-        />
-        <Route path="/SearchPage" element={<SearchPage />} />
-        <Route path="/Order" element={<Order />} />
-      </Routes>
+      <div className={styles.wrapper}>
+        <Nav />
+        <Header />
+        <Routes>
+          <Route path="/CartBox" element={<CartBox />} />
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/firstDishes"
+            element={<SideDishes filterData={firstDishes} />}
+          />
+          <Route
+            path="/secondDishes"
+            element={<SideDishes filterData={secondDishes} />}
+          />
+          <Route
+            path="/meatDishes"
+            element={<SideDishes filterData={meatDishes} />}
+          />
+          <Route
+            path="/salatDishes"
+            element={<SideDishes filterData={salatDishes} />}
+          />
+          <Route
+            path="/desertDishes"
+            element={<SideDishes filterData={desertDishes} />}
+          />
+          <Route
+            path="/drinkDishes"
+            element={<SideDishes filterData={drinkDishes} />}
+          />
+          <Route
+            path="/otherDishes"
+            element={<SideDishes filterData={otherDishes} />}
+          />
+          <Route path="/SearchPage" element={<SearchPage />} />
+          <Route path="/Order" element={<Order />} />
+        </Routes>
+      </div>
     </>
   );
 }
